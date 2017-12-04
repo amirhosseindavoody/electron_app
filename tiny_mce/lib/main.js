@@ -6,9 +6,13 @@ const path = require('path');
 const fs = require('fs');
 const Menu = electron.Menu;
 
+// const tinymce = require('tinymce');
+// console.log("I got here!!!!");
+
 console.log("This program is running on platform: " +process.platform);
 
 app.on('ready', () => {
+
 
   mainWindow = new BrowserWindow({width:1000});
 
