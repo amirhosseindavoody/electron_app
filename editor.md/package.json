@@ -1,0 +1,19 @@
+{
+  "name": "tinyMCE-electron",
+  "description": "A Markdown-to-HTML renderer",
+  "version": "0.0.1",
+  "dependencies": {
+    "electron": "^1.7.9",
+    "tinymce": "^4.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/electron-workshop.git"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "main": "lib/main.js",
+  "scripts": {
+    "start": "electron ."
+  }
+}
