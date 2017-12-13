@@ -1,0 +1,79 @@
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, input {
+  font: menu;
+}
+
+textarea, input, div, button {
+  outline: none;
+}
+
+.controls {
+  background-color: rgba(240, 163, 163, 0.795);
+  padding: 1em;
+  /* position: fixed; */
+  /* top: 80px;
+  left: 10px; */
+  width: 100%;
+}
+
+.controls button {
+  background-color: rgba(236, 128, 128, 0.795);
+  border: none;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+}
+
+.controls button:hover {
+  background-color: rgba(241, 82, 82, 0.795);
+}
+
+.controls button:active {
+  background-color: rgba(236, 128, 128, 0.795);
+}
+
+.controls button:disabled {
+  background-color: rgba(236, 128, 128, 0.212);
+}
+
+.content {
+  height: 100%;
+  /* display: flex; */
+  background-color: rgb(253, 232, 232)
+}
+
+.raw-markdown, .rendered-html {
+  margin-top: 4em;
+  min-height: 100vh;
+  max-width: 50%;
+  flex-grow: 1;
+  padding: 1em;
+  overflow: scroll;
+}
+
+.raw-markdown {
+  font-size: 1.1em;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-family: monospace;
+  white-space: pre;
+}

@@ -1,3 +1,10 @@
+# node modules directory
 node_modules
+
 .DS_Store
+
 Markdown Editor-darwin-x64
+
+# VScode files
+*.code-workspace
+.vscode

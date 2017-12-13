@@ -1,0 +1,38 @@
+{
+  "name": "trello-clone",
+  "description": "A small app like trello",
+  "version": "0.0.1",
+  "author": {
+    "name": "Amirhossein Davoody",
+    "email": "amirhossein.davoodi@gmail.com",
+    "url": "https://amirhosseindavoody.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/amirhosseindavoody/electron_app/issues"
+  },
+  "dependencies": {
+    "drag-drop": "^2.12.1",
+    "marked": "^0.3.5"
+  },
+  "devDependencies": {
+    "devtron": "^1.3.0",
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0",
+    "spectron": "^3.4.0",
+    "standard": "^8.4.0"
+  },
+  "keywords": [
+    "trello"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirhosseindavoody/electron_app.git"
+  },
+  "scripts": {
+    "package": "electron-packager . 'Markdown Editor'",
+    "package-all": "electron-packager . 'Markdown Editor' --platform=all --arch=all",
+    "start": "electron ."
+  }
+}
