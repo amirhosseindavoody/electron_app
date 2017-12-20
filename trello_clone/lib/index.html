@@ -8,28 +8,15 @@
   </head>
   <body>
 
-    <section class="header">
-      <h1> Amirhossein's Trello clone </h1>
-    </section>
-
     <section class="controls">
-      <button id="new-board" onclick="myFunction()">New board</button>
+      <button id="new-board">New board</button>
       <button id="new-list">New list</button>
       <button id="new-card">New card</button>
       <button id="delete-board" disabled="true">Delete board</button>
     </section>
 
-    <section class="content">
-      <h2> This is the content</h2>
-      <p> this is paragraph </p>
-    </section>
+    <section class="board-list"></section>
 
-    <script>
-      function myFunction() {
-          var content = document.getElementsByClassName("content")[0];
-          content.innerHTML = "<h3>Hello World</h3>";
-      }
-    </script>
-
+    <script src="./renderer.js"> </script>
   </body>
 </html>

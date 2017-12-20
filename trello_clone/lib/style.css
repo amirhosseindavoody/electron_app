@@ -1,79 +1,76 @@
-
 html {
   box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-
-*, *:before, *:after {
-  box-sizing: inherit;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-auto-columns: minmax(100px,auto);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-body, input {
-  font: menu;
-}
-
-textarea, input, div, button {
-  outline: none;
-}
-
-.controls {
-  background-color: rgba(240, 163, 163, 0.795);
+/* controls container */
+section.controls { 
+  border: 2px solid rgb(233,171,88);
   padding: 1em;
-  /* position: fixed; */
-  /* top: 80px;
-  left: 10px; */
-  width: 100%;
+  margin: 5px;
+  color: #d9480f;
+  grid-column: 1 / last-column;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  overflow: auto;
 }
 
-.controls button {
-  background-color: rgba(236, 128, 128, 0.795);
-  border: none;
-  font-size: 1.1em;
-  padding: 0.5em 1em;
+section.controls > button {
+ padding: 1em;
+ margin: 2px;
+ border: 2px solid rgb(233,171,88);
+ border-radius: 5px;
+ background-color: rgba(233,171,88,.5);
+
 }
 
-.controls button:hover {
-  background-color: rgba(241, 82, 82, 0.795);
+section.controls > button:hover {
+ background-color: rgba(233, 142, 22, 0.5);
 }
 
-.controls button:active {
-  background-color: rgba(236, 128, 128, 0.795);
+
+/* board container */
+section.board{
+  grid-column: 1/last-column;
+  border: 2px solid rgb(233,171,88);
+  padding: 1em;
+  margin: 5px;
+  color: #d9480f;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  overflow: auto;
 }
 
-.controls button:disabled {
-  background-color: rgba(236, 128, 128, 0.212);
-}
-
-.content {
-  height: 100%;
+section.board > div.list{
+  grid-column: 1/last-column;
+  border: 2px solid rgb(233,171,88);
+  /* padding: 1em; */
+  /* margin: 5px; */
+  /* color: #d9480f; */
   /* display: flex; */
-  background-color: rgb(253, 232, 232)
+  /* align-items: flex-start; */
+  /* align-content: center; */
 }
 
-.raw-markdown, .rendered-html {
-  margin-top: 4em;
-  min-height: 100vh;
-  max-width: 50%;
-  flex-grow: 1;
+section.board-list{
+  grid-column: 1/last-column;
+  border: 2px solid rgb(233,171,88);
   padding: 1em;
-  overflow: scroll;
-}
-
-.raw-markdown {
-  font-size: 1.1em;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  font-family: monospace;
-  white-space: pre;
+  margin: 5px;
+  color: #d9480f;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
 }
