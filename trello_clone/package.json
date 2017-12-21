@@ -12,12 +12,14 @@
   },
   "dependencies": {
     "drag-drop": "^2.12.1",
+    "eslint": "^4.13.1",
     "marked": "^0.3.5"
   },
   "devDependencies": {
     "devtron": "^1.3.0",
     "electron": "^1.4.3",
     "electron-packager": "^8.1.0",
+    "eslint-config-google": "^0.9.1",
     "spectron": "^3.4.0",
     "standard": "^8.4.0"
   },
